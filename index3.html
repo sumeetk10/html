@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>intro to html forms</title>
+
+        <style>
+            #register-form{
+                width: 300px;
+                background-color: white;
+                padding: 24px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .input-label{
+                margin: 0;
+                margin-bottom: 4px;
+                margin-top: 12px;
+            }
+        </style>
+
+    </head>
+
+    <body style="background-color: lightblue;">
+        <h1 style="text-align: center;">signup</h1>
+        <form id="register-form" method="POST">
+            <div>
+               <p class="input-label">full name:</p>
+                <input type="text" name="full name" placeholder="fullname"
+                 name="autofocus" >
+            </div>
+            <div>
+                <p class="input-label">email</p>
+                <input type="email" name="email" placeholder="email">
+            </div>
+            <div>
+                <p class="input-label">password</p>
+                <input type="password" name="password" required
+                maxlength="8" >
+            </div>
+            <div>
+                <p class="input-label">confirm password</p>
+                <input type="password" name="password" required>
+            </div>
+            <div>
+                <p class="input-label">gender</p>
+                <input type="radio" name="male" value="male">
+                male</input>
+                
+                
+                <input type="radio" name="female" value="female">
+                female</input>
+                
+                
+                <input type="radio" name="other" value="other">
+                other</input>
+            </div>
+            <div>
+                <p class="input-label">security question</p>
+                <select name="security question" id="">
+                    <option value="first-pet-name">what is 
+                        your first pet name?
+                    </option>
+                </select>
+
+                <div>
+                    <textarea name="answer" 
+                    id="text" cols="30" rows="6"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="terms"
+                    value="accept">i accept terms and
+                    condition</input>
+                </div>
+                <div>
+                    <input type="submit" value="register">
+                </div>
+
+
+            </div>
+            <input type="text" name="username" min="18" max="100">
+            <input type="password" name="password">
+            <input type="reset" value="reset">
+            <input type="date" name="date" max="1999-10-01">
+            <input type="file" name="image">
+
+
+        </form> 
+        
+        
+
+    </body>
+</html>
+
